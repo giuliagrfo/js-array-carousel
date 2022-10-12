@@ -44,15 +44,13 @@ nextButton.addEventListener('click', function() {
 
     //seleziono la seconda immagine
     const nextImg = slides[activeImg]
-    console.log(nextSlide);
+    // console.log(nextSlide);
 
-    // gli applico la classe active
-    nextSlide.classList.add('active')
-    // console.log('click su prev');    
+   
 })
 
 // aggiungo funzione click su pulsante prev
 prevButton.addEventListener('click', function(){
 
-    console.log('click su next');
+    
 })

@@ -34,23 +34,39 @@ nextButton.addEventListener('click', function() {
     // seleziono tutte le immagini e trovo quella attiva
     const allSlides = document.querySelectorAll('.slides > img');
 
-    const activeSlide = slides[activeImg];
-
+    const activeSlide = allSlides[activeImg];
     //  devo togliere la classe active all'immagine corrente
     activeSlide.classList.remove('active');
 
     // scorro le immagini di 1
-    activeImg++
+    activeImg++;
 
     //seleziono la seconda immagine
-    const nextImg = slides[activeImg]
-    // console.log(nextSlide);
+    const nextImg = allSlides[activeImg];
 
+    // aggiungo la classe active all'immagine
+    nextImg.classList.add('active');
    
 })
 
 // aggiungo funzione click su pulsante prev
 prevButton.addEventListener('click', function(){
 
-    
+    // seleziono tutte le immagini e trovo quella attiva
+    const allSlides = document.querySelectorAll('.slides > img');
+
+    const activeSlide = allSlides[activeImg];
+    //  devo togliere la classe active all'immagine corrente
+    activeSlide.classList.remove('active');
+
+    // decremento le immagini di 1
+    activeImg--;
+
+    //seleziono la seconda immagine
+    const nextImg = allSlides[activeImg];
+
+    // aggiungo la classe active all'immagine
+    nextImg.classList.add('active');
+   
 })
+

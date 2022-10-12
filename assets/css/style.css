@@ -3,6 +3,9 @@ img {
     max-width: 100%;
 }
 
-.slides {
-    width: 400px;
+.player {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
 }

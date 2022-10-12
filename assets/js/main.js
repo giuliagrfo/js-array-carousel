@@ -17,7 +17,7 @@ const slidesElement = document.querySelector('.slides');
 // scorro le immagini nell'array e le inserisco dinamicamente nell'elemento della DOM
 for (let i = 0; i < slides.length; i++) {
     const slideImg = slides[i];
-    const slideToCreate = `<img class="active" src="${slideImg}" alt="">`;
+    const slideToCreate = `<img class="${i === 0 ? 'active' : ''}" src="${slideImg}" alt="">`;
     slidesElement.insertAdjacentHTML('beforeend', slideToCreate);
     console.log(slideToCreate);
 }

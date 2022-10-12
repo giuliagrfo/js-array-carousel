@@ -21,3 +21,21 @@ for (let i = 0; i < slides.length; i++) {
     slidesElement.insertAdjacentHTML('beforeend', slideToCreate);
     console.log(slideToCreate);
 }
+
+
+// seleziono elemento della DOM dove inserire i pulsanti
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+
+
+// aggiungo funzione click su pulsante prev
+prevButton.addEventListener('click', function() {
+    
+    console.log('click su prev');
+})
+
+// aggiungo funzione click su pulsante prev
+nextButton.addEventListener('click', function(){
+    
+    console.log('click su next');
+})

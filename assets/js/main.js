@@ -47,6 +47,10 @@ nextButton.addEventListener('click', function() {
     // aggiungo la classe active all'immagine
     nextImg.classList.add('active');
    
+    
+      
+         
+          
 })
 
 // aggiungo funzione click su pulsante prev
@@ -67,6 +71,7 @@ prevButton.addEventListener('click', function(){
 
     // aggiungo la classe active all'immagine
     nextImg.classList.add('active');
-   
+
+
 })
 

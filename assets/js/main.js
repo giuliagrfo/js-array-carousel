@@ -27,15 +27,32 @@ for (let i = 0; i < slides.length; i++) {
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 
+let activeImg = 0;
 
-// aggiungo funzione click su pulsante prev
-prevButton.addEventListener('click', function() {
-    
-    console.log('click su prev');
+// aggiungo funzione click su pulsante next
+nextButton.addEventListener('click', function() {
+    // seleziono tutte le immagini e trovo quella attiva
+    const allSlides = document.querySelectorAll('.slides > img');
+
+    const activeSlide = slides[activeImg];
+
+    //  devo togliere la classe active all'immagine corrente
+    activeSlide.classList.remove('active');
+
+    // scorro le immagini di 1
+    activeImg++
+
+    //seleziono la seconda immagine
+    const nextImg = slides[activeImg]
+    console.log(nextSlide);
+
+    // gli applico la classe active
+    nextSlide.classList.add('active')
+    // console.log('click su prev');    
 })
 
 // aggiungo funzione click su pulsante prev
-nextButton.addEventListener('click', function(){
-    
+prevButton.addEventListener('click', function(){
+
     console.log('click su next');
 })
